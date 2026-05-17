@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #0b0b0b;
+    color: #ffffff;
+}
+
+.dark-background {
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.bulb-image {
+    width: min(180px, 35vw);
+    max-width: 180px;
+    height: auto;
+}
+
+.cat-image {
+    width: min(320px, 70vw);
+    max-width: 320px;
+    height: auto;
+}
+
+.switch-board {
+    background-color: #7b8794;
+    width: min(95%, 320px);
+    border-radius: 12px;
+    padding: 32px 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.button-row button {
+    flex: 1 1 48%;
+    min-width: 110px;
+}
+
+.switch-status {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.on-switch,
+.off-switch {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    width: min(120px, 45%);
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.on-switch {
+    background-color: #cbd2d9;
+}
+
+.off-switch {
+    background-color: #e12d39;
+}
+
+@media (max-width: 520px) {
+    .switch-status {
+        font-size: 20px;
+    }
+
+    .on-switch,
+    .off-switch {
+        width: 100%;
+    }
+
+    .bulb-image {
+        width: min(160px, 45vw);
+    }
+
+    .cat-image {
+        width: min(260px, 80vw);
+    }
+}
